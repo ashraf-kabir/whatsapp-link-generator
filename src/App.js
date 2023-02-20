@@ -4,7 +4,7 @@ import data from './countryList.json';
 
 function App() {
   const [countries, setCountries] = useState([]);
-  const [countryCode, setCountryCode] = useState('');
+  const [countryCode, setCountryCode] = useState('+880');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [generatedLink, setGeneratedLink] = useState('');
   const [success, setSuccess] = useState(false);
@@ -66,7 +66,7 @@ function App() {
             value={countryCode}
             onChange={(event) => setCountryCode(event.target.value)}
           >
-            <option>Select Country</option>
+            <option>Select a country</option>
             {countries.map((country, index) => (
               <option key={index} value={country.code}>
                 {country.name} ({country.code})
