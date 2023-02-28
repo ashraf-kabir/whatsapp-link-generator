@@ -75,10 +75,21 @@ function App() {
           </select>
 
           <input
-            type='text'
+            type='tel'
             placeholder='Phone Number'
             value={phoneNumber}
             onChange={(event) => setPhoneNumber(event.target.value)}
+            onKeyDown={(event) => {
+              if (
+                !(
+                  (event.keyCode > 95 && event.keyCode < 106) ||
+                  (event.keyCode > 47 && event.keyCode < 58) ||
+                  event.keyCode === 8
+                )
+              ) {
+                event.preventDefault();
+              }
+            }}
           />
         </div>
         <div
