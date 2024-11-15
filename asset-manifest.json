@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/whatsapp-link-generator/static/css/main.975e439b.css",
-    "main.js": "/whatsapp-link-generator/static/js/main.8521aa57.js",
+    "main.js": "/whatsapp-link-generator/static/js/main.f6051a4e.js",
     "index.html": "/whatsapp-link-generator/index.html",
     "main.975e439b.css.map": "/whatsapp-link-generator/static/css/main.975e439b.css.map",
-    "main.8521aa57.js.map": "/whatsapp-link-generator/static/js/main.8521aa57.js.map"
+    "main.f6051a4e.js.map": "/whatsapp-link-generator/static/js/main.f6051a4e.js.map"
   },
   "entrypoints": [
     "static/css/main.975e439b.css",
-    "static/js/main.8521aa57.js"
+    "static/js/main.f6051a4e.js"
   ]
 }
