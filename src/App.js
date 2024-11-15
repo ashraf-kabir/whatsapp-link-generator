@@ -78,16 +78,10 @@ function App() {
             type='tel'
             placeholder='Phone Number'
             value={phoneNumber}
-            onChange={(event) => setPhoneNumber(event.target.value)}
-            onKeyDown={(event) => {
-              if (
-                !(
-                  (event.keyCode > 95 && event.keyCode < 106) ||
-                  (event.keyCode > 47 && event.keyCode < 58) ||
-                  event.keyCode === 8
-                )
-              ) {
-                event.preventDefault();
+            onChange={(event) => {
+              const regex = /^[0-9\b]+$/;
+              if (event.target.value === '' || regex.test(event.target.value)) {
+                setPhoneNumber(event.target.value);
               }
             }}
           />
@@ -110,7 +104,6 @@ function App() {
         <div className='success-toast'>
           <span>Link copied to clipboard!</span>
         </div>
-        // hide the toast after 5 seconds
       )}
 
       {generatedLink && (
